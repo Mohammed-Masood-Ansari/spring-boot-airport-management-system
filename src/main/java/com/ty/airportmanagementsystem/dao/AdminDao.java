@@ -1,5 +1,7 @@
 package com.ty.airportmanagementsystem.dao;
 
-public interface AdminDao {
+import com.ty.airportmanagementsystem.dto.Admin;
 
+public interface AdminDao {
+	public Admin fetchAdminByEmailForLoginDao(String email);
 }

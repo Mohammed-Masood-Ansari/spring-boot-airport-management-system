@@ -1,5 +1,9 @@
 package com.ty.airportmanagementsystem.service;
 
-public interface AdminService {
+import com.ty.airportmanagementsystem.dto.Admin;
+import com.ty.airportmanagementsystem.response.ApplicationResponse;
 
+public interface AdminService {
+	
+	public ApplicationResponse<Admin> fetchAdminByEmailForLoginService(String email,String password);
 }
