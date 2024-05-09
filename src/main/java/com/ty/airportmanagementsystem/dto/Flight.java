@@ -1,6 +1,8 @@
 package com.ty.airportmanagementsystem.dto;
 
+import java.io.Serializable;
 import java.time.LocalTime;
+import java.util.RandomAccess;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -13,7 +15,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Flight {
+public class Flight implements Serializable,Cloneable,RandomAccess {
 
 	@Id
 	@Column(name = "number")
